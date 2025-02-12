@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <title>Forma</title>
+</head>
+
+<body>
+
+    <form action="#" method="post" class="forma" id="myForm">
+        <div class="title title-form">Create pending message
+            <div class="description description-legend">
+                Enter the message and the number of seconds after which the message will be sent
+            </div>
+        </div>
+        <label for="message">Message</label>
+        <textarea placeholder="Enter..." cols="30" rows="7" id="message" class="message" required></textarea>
+        <label for="second">Seconds:</label>
+        <input name="input" type="number" placeholder="Enter..." id="second" min="0" class="second" required>
+        <button type="submit" id="btnSend" class="button button-form">Send message</button>
+    </form>
+
+
+    <div class="wrapper">
+        <table class="table" id="table">
+            <caption class="title title-table">
+                Pending messages
+                <div class="description description-caption">This box displays the pending messages created earlier
+                    </pdiv>
+            </caption>
+            <tbody>
+                <tr class="caption">
+                    <th>Message</th>
+                    <th>Remains</th>
+                    <th>Status</th>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </tbody>
+        </table>
+        <div class="wrap">
+            <div class="popup" id="popup">
+                <div class="popup-title">
+                    Введите новое время !
+                </div>
+                <label for="second">Seconds:</label>
+                <input type="number" placeholder="Enter new time" id="secondother" min="0" class="second" required>
+
+                <div class="popup-title">
+                    Введите новое сообщение!
+                </div>
+                <label for="message">Message</label>
+                <textarea placeholder="Enter..." cols="30" rows="8" id="message-new" class="message"
+                    required></textarea>
+                <button type="submit" id="btnUpdate" class="button button-popup">Update info</button>
+                <button type="button" class="button-close" id="btnCLose">
+                    <svg data-v-fd2f743b="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                        aria-hidden="true" class="icon">
+                        <path fill-rule="evenodd"
+                            d="M3.308 3.308a.625.625 0 01.884 0L10 9.116l5.808-5.808a.625.625 0 11.884.884L10.884 10l5.808 
+                            5.808a.625.625 0 11-.884.884L10 10.884l-5.808 5.808a.625.625 0 11-.884-.884L9.116 10 3.308 4.192a.625.625 0 010-.884z"
+                            clip-rule="evenodd">
+                        </path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+ 
